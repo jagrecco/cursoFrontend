@@ -12,7 +12,7 @@ html{
 
 /* ------------------------------ ESTILOS HEADER -------------- */ 
 .header{ 
-
+    
     /*background-color: #574c46;*/
     opacity: .9;
     display: grid;
@@ -26,6 +26,7 @@ html{
 .header__logo{
     width: 12rem;
     margin-left: 8rem;
+    filter: drop-shadow(0 5px 8px rgba(97, 94, 94, 0.7));
 }
 .header__menu{
     display: flex;
@@ -758,10 +759,12 @@ html{
 
 .footer__logo {
     grid-area: logo;
+    filter: drop-shadow(0 5px 8px rgba(97, 94, 94, 0.7));
 }
 
 .footer__logo img{
     width: 14rem;
+    
 }
 
 .footer__ubicacion{
