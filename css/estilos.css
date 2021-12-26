@@ -11,20 +11,19 @@ html{
 }
 
 @keyframes aviso{
-    0%{left: -65%;
+    0%{left: -100%;
     }
 
-    25% {left: 35%;
+        
+    50%{left: 30%;
     }
-    
-    65%{background-color: rgb(247, 192, 74);
-        }
 
-    75%{left: 35%;
-        }
+    75%{left:30%;}
     
-    100%{left: -65%;
-        }
+
+    100%{left: -100%;
+    }
+
     }
 
 @keyframes aparece{
@@ -145,22 +144,23 @@ html{
         opacity: .9;
         border-radius: 6%;
         position: absolute;
-        height: 20rem;
-        width: 60rem;
+        height: auto;
+        width: 40rem;
         top: 17%;
-        left:-60%;
+        left:-100%;
         z-index: 102;
         animation-name:aviso;
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
         animation-duration: 4s;
         animation-delay: .2s;
+        text-align: center;
     }
     .main__aviso h3{
         display: inline-block;
         font-size: 6rem;
+        margin-top: 1rem;
         padding: 3rem;
-        text-align: center;
     }
     /* -------------------------- AVISO -------------------------*/
     
@@ -845,11 +845,40 @@ html{
 
 /* ------------------------  MERDIA QUERIES ------------------------------------------*/
 /*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
 
 
 @media screen and (max-width: 480px){   /* ------- Teléfono ------*/
     
-/* ---------------- HEADER Y FOOTER TODAS LAS VISTAS --------------------*/ 
+/* ---------------- HEADER Y FOOTER TODAS LAS VISTAS --------------------*/
+@keyframes aviso{
+    0%{left: -100%;
+    }
+
+    50%{left:0;
+    }
+
+    75%{left:0;}
+    
+    100%{left: -100%;
+    }
+
+    }
+
+    .main__aviso{
+
+        width: 100%;
+        top: 17%;
+        left:-100%;
+        border-radius: 0;
+        text-align: center;
+    }
+    .main__aviso h3{
+        font-size: 4rem;
+        margin-top: 0rem;
+    }
+
     .header{
         grid-template-columns: 100%;
         align-items: center;
@@ -1340,6 +1369,34 @@ html{
 
 @media screen and (min-width: 481px) and (max-width:768px) {      /* ------- Tablet pequeña ------*/
 
+    @keyframes aviso{
+        0%{left: -100%;
+        }
+    
+        50%{left:0;
+        }
+    
+        75%{left:0;}
+        
+        100%{left: -100%;
+        }
+    
+        }
+    
+        .main__aviso{
+    
+            width: 100%;
+            top: 17%;
+            left:-100%;
+            border-radius: 0;
+            text-align: center;
+        }
+        .main__aviso h3{
+            font-size: 4rem;
+            margin-top: 0rem;
+            
+        }
+
 /* ---------------- HEADER Y FOOTER TODAS LAS VISTAS --------------------*/ 
     .header{
         grid-template-columns: 100%;
@@ -1817,6 +1874,34 @@ html{
 }
 
 @media screen and (min-width: 769px) and (max-width:1023px) {      /* ------- Tablet pequeña ------*/
+
+    @keyframes aviso{
+        0%{left: -100%;
+        }
+    
+        50%{left:0;
+        }
+    
+        75%{left:0;}
+        
+        100%{left: -100%;
+        }
+    
+        }
+    
+        .main__aviso{
+    
+            width: 100%;
+            top: 17%;
+            left:-100%;
+            border-radius: 0;
+            text-align: center;
+        }
+        .main__aviso h3{
+            font-size: 4rem;
+            margin-top: 0rem;
+            
+        }
 
     /* ---------------- HEADER Y FOOTER TODAS LAS VISTAS --------------------*/ 
         .header{
