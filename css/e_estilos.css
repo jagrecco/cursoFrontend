@@ -21,11 +21,6 @@ html{
 
 /*-----------------------------  HERO  ----------------------*/
 
-.hero__sec{
-    margin: 0;
-    padding: 0;
-}
-
 .hero__img img{
     width: 100%;
     height: auto;
@@ -146,27 +141,22 @@ html{
 @media screen and (max-width: 576px){
 
     .header__logo{
-        width: 5rem;
+        width: 6rem;
         margin: 1rem 1rem;
     }
     .hero__txt{
         padding: 2rem;
     }
-
-    .main__hero--boton{
-
-        padding: .5rem 2rem;
-        margin-top: 1rem;
-        text-decoration: none;
-        font-size: 1rem;
+    .hero__txt h1{
+        display:none;
     }
 
     .main__nosotros--txt{
-        padding: 2rem;
+        padding: 3rem;
     }
 
     .contiene__tarjetas{ 
-        padding: 2rem 1rem;
+        padding: 2rem 2rem;
     }
     
     .card{
@@ -175,11 +165,11 @@ html{
     }
 
     .footer__contiene{
-        padding-top: 1rem;
+        padding-top: 3rem;
     }
 
     .footer__dir{
-        font-size: .8rem;
+        font-size: 1.5rem;
         padding: 2rem 0;   
     }
 
@@ -189,24 +179,14 @@ html{
     }
     
     .footer__logo img{
-        padding: 2rem 0;
-        width: 5rem;   
-    }
-    .footer__copy{
-        font-size: .5rem;
-        padding: .5rem 0;
-        
+        padding: 4rem 0;
+        width: 8rem;   
     }
 }
 
 
 @media screen and (min-width: 577px) and (max-width:768px) {
 
-    .header__logo{
-        width: 5rem;
-        margin: 1rem 1rem;
-    }
-
     .hero__txt{
         padding: 2rem;
     }
@@ -222,10 +202,6 @@ html{
     .card{
         width: 100%;
         margin-top: 2rem;
-    }
-
-    .footer__contiene{
-        padding-top: 3rem;
     }
 
     .footer__dir{
@@ -234,18 +210,12 @@ html{
     }
     .footer__logo img{
         padding: 4rem 0;
-        width: 6rem;   
+        width: 10rem;   
     }
 
 }
 
-@media screen and (min-width: 769px) and (max-width:1023px){
-
-    .header__logo{
-        width: 4rem;
-        margin: 1rem .5rem;
-    }
-
+@media screen and (min-width: 769px) and (max-width:1024px){
     .hero__txt{
         padding: 2rem;
     }
@@ -263,51 +233,9 @@ html{
         margin-top: 2rem;
     }
 
-    .footer__contiene{
-        padding-top: 3rem;
-    }
-
     .footer__logo img{
         padding: 4rem 0;
-        width: 6rem;   
-    }
-
-    .footer__dir{
-        font-size: 1.5rem;
-        padding: 2rem 0;   
-    }
-}
-@media screen and (min-width: 1024px){
-
-    .header__logo{
-        width: 6rem;
-        margin: 1rem .5rem;
-    }
-
-    .hero__txt{
-        padding: 2rem;
-    }
-
-    .main__nosotros--txt{
-        padding: 4rem;
-    }
-
-    .contiene__tarjetas{ 
-        padding: 2rem 2rem;
-    }
-    
-    .card{
-        width: 100%;
-        margin-top: 2rem;
-    }
-
-    .footer__contiene{
-        padding-top: 3rem;
-    }
-
-    .footer__logo img{
-        padding: 4rem 0;
-        width: 6rem;   
+        width: 10rem;   
     }
 
     .footer__dir{
