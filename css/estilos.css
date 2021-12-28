@@ -139,6 +139,68 @@ html{
 }
 /*--------------------------------------------------------------------*/
 
+/*-------------------------- VISTA NOSOTROS --------------------------*/
+.articulo__propuesta{
+    background-color: #e5f3fb;
+}
+
+.articulo__propuesta--img img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    margin: auto;
+    opacity: .8;
+}
+
+.articulo__staff{
+    background-color: #f3e7f7;
+}
+
+.articulo__instalaciones{
+    background-color: #ebf7e7;
+}
+
+.instalaciones__detalle{
+    display: flex;
+    flex-direction: column;
+}
+
+.instalaciones__detalle img{
+    width: 100%;
+    height: auto;
+}
+
+/*--------------------------------------------------------------------*/
+
+/*-------------------- VISTA INICIAL --------------------------------*/
+.articulo__inicial{
+    background-color: #fbfdee;
+}
+
+.main__jardin--img{
+    width: 100%;
+    height: auto;
+}
+
+.article__organizacion{
+    background-color: rgb(250, 234, 244);
+}
+
+.article__proyecto{
+    background-color: rgb(229 229 247);
+}
+
+.article__organizacion--img img{
+    width: 100%;
+}
+
+/*------------------------------------------------------------------*/
+
+/*-------------------- VISTA PRIMARIO-------------------------------*/
+.article__idioma{
+    background-color: rgb(241, 241, 221);
+}
+/*-----------------------------------------------------------------*/
 
 /******************************************************************/
 /************************* MEDIA QUERIES **************************/
@@ -195,7 +257,14 @@ html{
     .footer__copy{
         font-size: .5rem;
         padding: .5rem 0;
-        
+    }
+
+    .articulo__propuesta--img img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin: auto;
+        opacity: .8;
     }
 }
 
