@@ -194,6 +194,66 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <!-- Modal Inscripcion-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Información de Inscripción</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="">
+        
+          <form action="#" method="get" class="main__f" >  <!-- FORMULARIO DE CONTACTO -->
+
+            <fieldset>
+    
+                <div class="main__formulario--campo">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+  
+                <div class="main__formulario--campo">
+                  <label for="apellido">Apellido</label>
+                  <input type="text" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+                  
+                <div class="main__formulario--interes">
+                  <label for="nivel">Nivel de interés</label>
+                    <select name="nivel-interes" id="nivel" class="formulario__interes">
+                      <option value="inicial">Administración</option>
+                      <option value="inicial">Secretaría</option>
+                      <option value="inicial">Dirección General</option>
+                      <option value="inicial">Inicial</option>
+                      <option value="primaria">Primario</option>
+                      <option value="secundaria">Secundario</option>
+                    </select>
+                </div>
+
+                <div class="main__formulario--mail">
+                  <label for="mail">Email</label>
+                  <input type="email" name="correo" id="mail" placeholder="Ingrese su email" class="formulario__mail"><br>
+                  <textarea name="correo_txt" id="email_txt" cols="30" rows="5" placeholder="Déjenos su consulta aquí" class="email__txt"></textarea>
+                </div>
+  
+                <input type="submit" value="Enviar" class="main__form--boton" data-bs-dismiss="modal">
+                <input type="reset" value="Limpiar Datos" class="main__form--boton" data-bs-dismiss="modal">
+  
+              </fieldset>
+  
+          </form>
+
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 
 
