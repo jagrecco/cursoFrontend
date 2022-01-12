@@ -8,7 +8,9 @@
     filter: drop-shadow(0 5px 8px rgba(97, 94, 94, 0.7));
 }
 
+/*   aviso en vista index   */
 .aviso{
+    width: calc(100vw/3);
     position: absolute;
     text-align: center;
     margin: auto;

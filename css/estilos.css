@@ -279,7 +279,7 @@
     width: 100%;
 }
 
-.articulo__inicial--idioma{
+.articulo__secundario--idioma{
     background-color: rgb(252 246 234);
     width: 100%;
 }
@@ -621,7 +621,7 @@
         padding: 2rem 8rem;
         border-radius: 6px;
     }
-    
+
     @keyframes aviso{
     
         0%{

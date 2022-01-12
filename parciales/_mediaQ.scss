@@ -9,7 +9,6 @@
     }
 
     .main__hero--boton{
-
         padding: .5rem 2rem;
         margin-top: 1rem;
         text-decoration: none;
@@ -18,14 +17,15 @@
 
     .main__nosotros{
         padding: 0rem;
-    }
-    .main__nosotros--txt{
-        padding: 2rem;
-    }
 
-    .main__nosotros--img img{
-        width: 100%;
-        height: 300px;
+        &--txt{
+            padding: 2rem;
+        }
+
+        &--img img{
+            width: 100%;
+            height: 300px;
+        }
     }
 
     .contiene__tarjetas{ 
@@ -129,14 +129,15 @@
 
     .main__nosotros{
         padding: 0rem;
-    }
-    .main__nosotros--txt{
-        padding: 2rem;
-    }
 
-    .main__nosotros--img img{
-        width: 100%;
-        height: 300px;
+        &--txt{
+            padding: 2rem;
+        }
+
+        &--img img{
+            width: 100%;
+            height: 300px;
+        }
     }
 
     .contiene__tarjetas{ 
@@ -269,6 +270,14 @@
         }
     }
 
+    .aviso{
+        width: calc(100vw/3);
+        top:10vh;
+        font-size: 10rem;
+        padding: 2rem 1rem;
+        border-radius: 6px;
+    }
+
 }
 
 @media screen and (min-width:992px){
@@ -314,7 +323,16 @@
         justify-content:space-around;
         margin: auto;
     }
+
+    .aviso{
+        width: calc(100vw/3);
+        top:10vh;
+        font-size: 12rem;
+        padding: 2rem 4rem;
+        border-radius: 6px;
+    }
 }
+
 @media screen and (min-width: 1200px){
 
     .header__logo{
@@ -360,6 +378,7 @@
     }
 
     .aviso{
+        width: calc(100vw/3);
         top:10vh;
         font-size: 12rem;
         padding: 2rem 8rem;
@@ -426,6 +445,7 @@
     }
 
     .aviso{
+        width: calc(100vw/3);
         top:10vh;
         font-size: 12rem;
         padding: 2rem 8rem;
