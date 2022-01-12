@@ -1,5 +1,6 @@
-.header__logo{
-    width: 10rem;
-    margin: 2rem 0;
-    filter: drop-shadow(0 5px 8px rgba(97, 94, 94, 0.7));
-}
+@import "../parciales/variables";
+@import"../parciales/componentes";
+@import"../parciales/hero";
+@import"../parciales/contenedores";
+@import"../parciales/footer";
+@import"../parciales/mediaQ";

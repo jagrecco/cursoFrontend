@@ -1,0 +1,23 @@
+.hero{
+    position: relative;
+    z-index: 2;
+
+    &__mensaje{
+        align-items: center;
+        justify-items: center;
+    }
+    
+    &__txt{
+        padding: 0 6rem;
+    }
+    
+    &__bajada{   
+        color:#f16c1a;
+    }
+    
+    &__img img{
+        width: 100%;
+        height: auto;
+        opacity: .8;
+    }
+}

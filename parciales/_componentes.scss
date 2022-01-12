@@ -1,0 +1,92 @@
+.header{
+    padding: 0;
+}
+
+.header__logo{
+    width: 6rem;
+    margin: 2rem 0;
+    filter: drop-shadow(0 5px 8px rgba(97, 94, 94, 0.7));
+}
+
+.aviso{
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    left: -200%;
+    top: 10vh;
+    
+    z-index: 4;
+    background-color: #ea5100;
+    opacity: .8;
+    font-weight: bolder;
+    font-size: 12rem;
+    padding: 4rem;
+    color:white;
+
+    animation-name:aviso;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: .1s;
+}
+
+@keyframes aviso{
+    
+    0%{
+        left: -200%;
+    }
+    
+    35%{
+        left: calc(100vw/3);
+    }
+    
+    60%{
+        left: calc(100vw/3);
+    }
+    
+    75%{
+        opacity: 1;
+    }
+    
+}
+/* estilos botones - inscripcion*/
+.btn{
+    background-color: #c50002;
+    border-color: #c50002;
+}
+
+.btn__insc{
+    position: fixed;
+    z-index: 10;
+    right: 30px;
+    bottom: 30px;
+}
+
+
+ /* estilos del modal, todas las vistas */
+.modal-title{
+    color:#c50002;
+}
+
+.main__formulario{
+
+    &--campo input{
+        width: 100%;
+    }
+    
+    &--interes{
+        width: 100%;
+    }
+    
+    &--e-mail{
+        width: 100%;
+    }
+    &--mail_txt{
+        width: 100%;
+    }
+    &--boton{
+        background-color:#c50002;
+        color: white;
+        border-radius: 3px;
+    }
+}

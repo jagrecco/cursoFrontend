@@ -1,0 +1,51 @@
+.footer{
+    background-color: rgb(231, 225, 225);
+
+    &__contiene{    
+        --bs-gutter-x:0;
+        align-items: center;
+        justify-items: center;
+        
+    }
+    
+    &__logo{
+        display: flex;
+        justify-content: center;
+        filter: drop-shadow(0 5px 8px rgba(97, 94, 94, 0.7));
+    }
+    
+    &__logo img{
+        width: 8rem;   
+    }
+
+    &__flex--redes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__bi{
+        width: 40px;
+        height: 40px;
+    }
+
+    &__ubicacion{
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &__dir{
+        font-size: 1.5rem;
+        padding: 4rem 0;
+        text-align: center;
+    }
+    
+    &__copy{
+        width: 100%;
+        background-color: whitesmoke;
+        font-size: 1rem;
+        padding: .5rem 0;
+        text-align: center;
+    }
+}

@@ -1,302 +1,3 @@
-
-/* ------------------------------ ESTILOS HEADER -------------- */ 
-
-.header__logo{
-    width: 10rem;
-    margin: 2rem 0;
-    filter: drop-shadow(0 5px 8px rgba(97, 94, 94, 0.7));
-}
-
-
-/* ----------------------------/ HEADER ----------------------*/
-
-/*-----------------------------  HERO  ----------------------*/
-.hero{
-    position: relative;
-    z-index: 2;
-}
-
-.hero__mensaje{
-    align-items: center;
-    justify-items: center;
-}
-.hero__txt{
-    padding: 0 12rem 0;
-}
-
-.hero__bajada{   
-    color: rgb(241 108 26);
-}
-
-.hero__img img{
-    width: 100%;
-    height: auto;
-    opacity: .8;
-}
-
-/* --------------------------- AVISO-----------------------------------*/
-
-.aviso{
-    position: absolute;
-    text-align: center;
-    margin: auto;
-    left: -200%;
-    top: 10vh;
-    
-    z-index: 4;
-    background-color: #ea5100;
-    opacity: .8;
-    font-weight: bolder;
-    font-size: 12rem;
-    padding: 4rem;
-    color:white;
-
-    animation-name:aviso;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 4s;
-    animation-delay: .1s;
-}
-
-@keyframes aviso{
-    
-    0%{
-        left: -200%;
-    }
-    
-    35%{
-        left: calc(100vw/3);
-    }
-    
-    60%{
-        left: calc(100vw/3);
-    }
-    
-    75%{
-        opacity: 1;
-    }
-    
-}
-
-.aviso__btn button{
-    position:fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: #ea5100;
-    border: none;
-    color: white;
-    padding: 1rem 2rem;
-}
-
-.aviso__btn button:hover{
-    font-weight: bolder;
-}
-
-/*------------------- MODAL INSCRIPCION --------------------------------*/
-.modal-title{
-    color:#c50002;
-}
-.main__formulario--campo input{
-    width: 100%;
-}
-
-.formulario__interes{
-    width: 100%;
-}
-
-.formulario__mail{
-    width: 100%;
-}
-.email__txt{
-    width: 100%;
-}
-.main__form--boton{
-    background-color:#c50002;
-    color: white;
-    border-radius: 3px;
-}
-
-/* -------------------------------  / ESTILOS HERO SECC -------------- */ 
-/*----------------------------- / HERO ----------------------*/
-
-/*------------------------------NOSOTROS----------------------------- */
-.main__nosotros{
-    background-color: #f4eef0;
-}
-
-.main__nosotros--img img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    margin: auto;
-}
-
-    
-/*------------------------------NOSOTROS----------------------------- */
-
-/*------------------------------TARJETAS------------------------------- */
-.contiene__tarjetas{ 
-    padding: 4rem 4rem;
-}
-
-.card{
-    width: 95%;
-    overflow: hidden;
-}
-
-.card img{
-    object-fit: cover;
-    width: 100%;
-    height: 45vh;
-}
-
-.card img:hover{
-    transform: scale(1.1) translate(-4%, -1%);
-    transition: transform 600ms ease-in;
-}
-
-.btn{
-    background-color: #c50002;
-    border-color: #c50002;
-}
-/*------------------------------ /TARJETAS----------------------------- */
-
-/*-------------------------------FOOTER -------------------------------*/
-
-.footer__contiene{    
-    background-color: rgb(211, 205, 205);
-    align-items: center;
-    justify-items: center;
-    
-}
-
-.footer__logo{
-    display: flex;
-    justify-content: center;
-    filter: drop-shadow(0 5px 8px rgba(97, 94, 94, 0.7));
-}
-
-.footer__logo img{
-    width: 14rem;   
-}
-
-.footer__flex--redes{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer__bi{
-    width: 50px;
-    height: 50px;
-}
-
-.footer__dir{
-    font-size: 2rem;
-    padding: 4rem 0;
-    text-align: center;
-}
-
-.footer__copy{
-    font-size: 1rem;
-    padding: 1rem 0;
-    text-align: center;
-}
-/*--------------------------------------------------------------------*/
-
-/*-------------------------- VISTA NOSOTROS --------------------------*/
-
-
-.articulo__propuesta{
-    /*background-color: #e5f3fb;*/
-    width: 100%;
-}
-
-.articulo__propuesta--img img{
-    
-    width: 100%;
-    height: 700px;
-    object-fit: cover;
-    margin: auto;
-    opacity: .8;
-}
-
-.articulo__staff{
-    /*background-color: #f3e7f7;*/
-    width: 100%;
-}
-
-.articulo__instalaciones{
-    /*background-color: #ebf7e7;*/
-    width: 100%;
-}
-
-.instalaciones__detalle{
-    display: flex;
-    flex-direction: column;
-}
-
-.instalaciones__detalle img{
-    width: 100%;
-    height: auto;
-}
-
-/*--------------------------------------------------------------------*/
-
-/*-------------------- VISTA INICIAL --------------------------------*/
-
-.main__jardin--img{
-    width: 100%;
-    height: auto;
-}
-
-.main__jardin--img:hover{
-    transform: scale(1.1) translate(-4%, -1%);
-    transition: transform 600ms ease-in;
-}
-
-.article__organizacion{
-    background-color: rgb(243, 234, 240);
-    width: 100%;
-}
-
-
-.article__organizacion--img img{
-    width: 100%;
-}
-
-/*------------------------------------------------------------------*/
-
-/*-------------------- VISTA PRIMARIO-------------------------------*/
-.article__idioma{
-    /*background-color: rgb(243, 243, 202);*/
-    width: 100%;
-}
-/*-----------------------------------------------------------------*/
-
-.presenta__secundario{
-    /*background-color: rgb(248, 235, 211);*/
-    width: 100%;
-}
-
-.articulo__inicial--idioma{
-    background-color: rgb(252 246 234);
-    width: 100%;
-}
-/* -------------------- VISTA COMUNIDAD --------------------------*/
-
-.comunidad__nota--0{
-    background-color: rgb(250, 189, 149);
-}
-
-.comunidad__nota--1{
-    background-color: rgb(252, 226, 208);
-}
-
-/******************************************************************/
-/************************* MEDIA QUERIES **************************/
-/******************************************************************/
-
 @media screen and (max-width: 576px){
 
     .header__logo{
@@ -365,6 +66,17 @@
         object-fit: cover;
         margin: auto;
         opacity: .8;
+    }
+
+    .articulo__propuesta--lista{
+        flex-direction: column;
+        padding: 0;
+        align-items: flex-start;
+
+        & li{
+            text-align: left;
+            margin-bottom: 1rem;
+        }
     }
 
     .aviso{
@@ -467,6 +179,25 @@
         opacity: .8;
     }
     
+    .articulo__propuesta--lista{
+        flex-direction: column;
+        padding: 2rem 4rem;
+        align-items: flex-start;
+
+        & li{
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .aviso{
+        width: 100%;
+        top: 6vh;
+        font-size: 10rem;
+        padding: 2rem;
+    }
+
+    
     .flex__redes{
         max-width: 600px;
         justify-content:space-around;
@@ -523,6 +254,19 @@
         max-width: 600px;
         justify-content:space-around;
         margin: auto;
+    }
+
+    .articulo__propuesta--lista{
+        flex-direction: row;
+        padding: 1rem 1rem;
+        align-items:flex-start;
+        justify-content:left;
+        flex-wrap: wrap;
+
+        & li{
+            text-align: left;
+            margin-bottom: 2rem 2rem;
+        }
     }
 
 }
