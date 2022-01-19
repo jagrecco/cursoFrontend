@@ -1,8 +1,19 @@
+@import"../parciales/mQ-sass";
+
 .header{
     padding: 0;
 }
 
 .header__logo{
+    @include pantalla(telefono){
+
+        &{
+            width: 5rem;
+            margin: 1rem 1rem;
+        }
+
+    }
+
     width: 6rem;
     margin: 2rem 0;
     filter: drop-shadow(0 5px 8px rgba(97, 94, 94, 0.7));
