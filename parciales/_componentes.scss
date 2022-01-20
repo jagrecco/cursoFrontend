@@ -69,6 +69,7 @@
 }
 
 .btn__insc{
+    @extend .btn;
     position: fixed;
     z-index: 10;
     right: 30px;
@@ -98,7 +99,7 @@
         width: 100%;
     }
     &--boton{
-        background-color:#c50002;
+        @extend .btn;
         color: white;
         border-radius: 3px;
     }

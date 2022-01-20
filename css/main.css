@@ -1,3 +1,12 @@
+@charset "UTF-8";
+/*$color-fondo1: #fbd5d6;
+$color-fondo2: #f4eef0;
+$color-fondo3: #f6f3ed;
+$color-fondo-comunidad0:#f5dbc9;
+$color-fondo-comunidad1:#f5ece5;*/
+/*  mapa formado por los colores de fondo  */
+/*  mapa formado por los colores de fondo en la vista de comunidad  */
+/*    mixin para imágen recortada   */
 /* mixin que genera todos los media queries - breakpoints bootstrap */
 .header {
   padding: 0; }
@@ -43,7 +52,7 @@
     opacity: 1; } }
 
 /* estilos botones - inscripcion*/
-.btn {
+.btn, .btn__insc, .main__formulario--boton {
   background-color: #c50002;
   border-color: #c50002; }
 
@@ -70,7 +79,6 @@
   width: 100%; }
 
 .main__formulario--boton {
-  background-color: #c50002;
   color: white;
   border-radius: 3px; }
 
@@ -89,12 +97,23 @@
     height: auto;
     opacity: .8; }
 
+/*$color-fondo1: #fbd5d6;
+$color-fondo2: #f4eef0;
+$color-fondo3: #f6f3ed;
+$color-fondo-comunidad0:#f5dbc9;
+$color-fondo-comunidad1:#f5ece5;*/
+/*  mapa formado por los colores de fondo  */
+/*  mapa formado por los colores de fondo en la vista de comunidad  */
+/*    mixin para imágen recortada   */
 /*   contenedor nosotros vista index   */
 .main__nosotros img {
-  width: 100%;
   height: 500px;
   object-fit: cover;
-  margin: auto; }
+  width: 100%;
+  margin: auto;
+  /*width: 100%;
+        object-fit: cover;
+        margin: auto;*/ }
 
 .main__nosotros--txt {
   padding: 2rem 0 1rem; }
@@ -107,8 +126,11 @@
   width: 100%;
   overflow: hidden; }
   .card img {
+    /*object-fit: cover;
+        width: 100%;*/
     object-fit: cover;
     width: 100%;
+    margin: auto;
     height: 45vh; }
     .card img:hover {
       transform: scale(1.1) translate(-4%, -1%);
@@ -119,10 +141,13 @@
   /*  propuesta institucional  */
   width: 100%; }
   .articulo__propuesta--img img {
-    width: 100%;
     height: 700px;
     object-fit: cover;
+    width: 100%;
     margin: auto;
+    /*width: 100%;
+        object-fit: cover;
+        margin: auto;*/
     opacity: .8; }
   .articulo__propuesta--lista {
     padding-bottom: 2rem;
@@ -137,6 +162,7 @@
 .articulo__staff {
   /*  staff   */
   background-color: #f6f3ed;
+  /*$color-fondo3;*/
   width: 100%; }
 
 .articulo__instalaciones {
@@ -159,7 +185,7 @@
     transition: transform 600ms ease-in; }
 
 .article__organizacion {
-  background-color: #f3eaf0;
+  background-color: #f4eef0;
   width: 100%; }
   .article__organizacion--img img {
     width: 100%; }
@@ -173,7 +199,7 @@
   width: 100%; }
 
 .articulo__secundario--idioma {
-  background-color: #fcf6ea;
+  background-color: #f6f3ed;
   width: 100%; }
 
 /*   contenedor vista comunidad  */

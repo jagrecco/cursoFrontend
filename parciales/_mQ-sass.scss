@@ -1,4 +1,5 @@
 /* mixin que genera todos los media queries - breakpoints bootstrap */
+
 @mixin pantalla($ancho){
 	@if $ancho=="telefono" {
 	@media (max-width:576px) {@content;}
