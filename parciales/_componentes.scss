@@ -4,7 +4,10 @@
     padding: 0;
 }
 
+
 .header__logo{
+
+    /*   mixin con un mediaquery  */
     @include pantalla(telefono){
 
         &{
@@ -17,6 +20,10 @@
     width: 6rem;
     margin: 2rem 0;
     filter: drop-shadow(0 5px 8px rgba(97, 94, 94, 0.7));
+}
+
+.nav-link{
+    color: yellow;
 }
 
 /*   aviso en vista index   */

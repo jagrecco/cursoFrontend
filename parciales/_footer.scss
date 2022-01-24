@@ -1,5 +1,5 @@
 .footer{
-    background-color: rgb(231, 225, 225);
+    background-color: map-get($colores-fondo , fondo-principal);
 
     &__contiene{    
         --bs-gutter-x:0;
@@ -29,23 +29,41 @@
         height: 40px;
     }
 
-    &__ubicacion{
-        padding: 0;
-        height: 100%;
-        overflow: hidden;
-    }
 
     &__dir{
         font-size: 1.5rem;
         padding: 4rem 0;
         text-align: center;
+        color:$color-principal;
     }
-    
+
+    &__menu{
+        margin-left: 4rem;
+        font-size: 1.2rem;
+        & li{
+            list-style: none;
+            & a{
+                text-decoration: none;
+                color:$color-principal;
+
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    &__ubicacion{
+        margin-top: 4rem;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }    
     &__copy{
         width: 100%;
-        background-color: whitesmoke;
         font-size: 1rem;
-        padding: .5rem 0;
+        margin-top: 1rem;
+        padding: 0;
         text-align: center;
     }
 }

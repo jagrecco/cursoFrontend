@@ -1,5 +1,6 @@
 .hero{
     position: relative;
+    padding-top: 3rem;
     z-index: 2;
 
     &__mensaje{
@@ -8,7 +9,13 @@
     }
     
     &__txt{
-        padding: 0 6rem;
+        
+        padding: 0rem 6rem;
+
+        & h1{
+            font-weight: normal;
+            /*color: #c10001;*/
+        }
     }
     
     &__bajada{   
@@ -16,8 +23,9 @@
     }
     
     &__img img{
-        width: 100%;
-        height: auto;
+        @include imagen__recortada;
+        z-index: 1;
+        height: 60vh;
         opacity: .8;
     }
 }

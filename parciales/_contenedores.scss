@@ -1,32 +1,48 @@
 @import"../parciales/variables";
 
+body{
+    background-color: map-get($colores-fondo , fondo-principal);
+}
+
+.contenedor__principal{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
  /*   contenedor nosotros vista index   */
 .main__nosotros{
-    
+    margin-top: 3rem;
     & img{
-        height: 500px;
         @include imagen__recortada;
-        /*width: 100%;
-        object-fit: cover;
-        margin: auto;*/
+        height: 400px;
+        
     }
     &--txt{
-        padding: 2rem 0 1rem;
+        padding: 6rem 0 .2rem;
     }
+    &--cols{
+        column-count: 2;
+        column-gap: 60px;
+    }
+        & p{
+            text-align: justify;
+        }
 }
 
   /*    contenedor tarjetas vista index  */
 .contiene__tarjetas{
-    padding: 6rem 4rem;
+    padding: 8rem 6rem;
+    margin-bottom: 4rem;
 }
 
 .card{
     width: 100%;
     overflow: hidden;
+    border: 0px;
 
     & img{
-        /*object-fit: cover;
-        width: 100%;*/
         @include imagen__recortada;
         height: 45vh;
 
