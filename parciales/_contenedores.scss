@@ -1,68 +1,170 @@
 @import"../parciales/variables";
+@import"../parciales/mQ-sass";
 
-body{
-    background-color: map-get($colores-fondo , fondo-principal);
-}
+/*body{
+    /*background-color: map-get($colores-fondo , fondo-principal);
+}*/
 
 .contenedor__principal{
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-
 }
+
+/*  contenedor del heder y el hero  */
+.encabezado{
+    background: linear-gradient( 
+              rgba(0, 0, 0, 0.1),
+              rgba(0, 0, 0, 0.6)
+          ),
+          url(../assets/fondo_hero.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: 1000;
+  }
 
  /*   contenedor nosotros vista index   */
 .main__nosotros{
-    margin-top: 3rem;
-    & img{
-        @include imagen__recortada;
-        height: 400px;
-        
+    background-color: white;
+    @include pantalla(telefono){
+        padding: 0rem 2rem;
     }
+    
     &--txt{
-        padding: 6rem 0 .2rem;
+        padding: 6rem 0 2rem;
+
+        @include pantalla(telefono){
+            padding: 4rem 0 1rem;
+        }
+        @include pantalla(tablet){
+            padding: 6rem 1rem 2rem;
+        }
+
+        & h2{
+            @include titulos__internos;
+            padding-bottom: 2rem;
+        }
     }
     &--cols{
         column-count: 2;
-        column-gap: 60px;
+        column-gap: 63px;
+
+        @include pantalla(telefono){
+            column-count: 1;
+        }
+
+        @include pantalla(tablet){
+            column-gap:30px;
+        }
+        @include pantalla(pc-media){
+            column-gap: 63px;
+        }
     }
         & p{
             text-align: justify;
         }
 }
 
+.encabezado__nosotros{
+    background: url(../assets/nosotros.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+
+}
   /*    contenedor tarjetas vista index  */
 .contiene__tarjetas{
-    padding: 8rem 6rem;
-    margin-bottom: 4rem;
+    background-color: white;
+    padding: 0 1rem;
 }
 
-.card{
-    width: 100%;
-    overflow: hidden;
-    border: 0px;
+.tarjeta{
+    margin-top: -90px;
+    padding: 1rem;
+    background-color: white;
 
-    & img{
-        @include imagen__recortada;
-        height: 45vh;
+    
+    &:hover{
+        border-radius: 3px;
+        border: $color-principal solid 1px;
+    }
+    
+    @include pantalla(pc-xxl){
+        margin-top: -70px;
+    }
+    
+    @include pantalla(pc-xl){
+        margin-top: -70px;
+    }
 
-        &:hover{
-            transform: scale(1.1) translate(-4%, -1%);
-            transition: transform 600ms ease-in;
+    &__1{
+        @include pantalla(telefono){
+            margin-top: -50px;
         }
+
+        @include pantalla(pc-media){
+            margin-top: -70px;
+        }
+    }
+
+    &__2{
+        @include pantalla(telefono){
+            margin-top: 20px;
+        }
+
+        @include pantalla(tablet){
+            margin-top: 30px;
+        }
+
+        @include pantalla(pc-media){
+            margin-top: -70px;
+        }
+    }
+
+    &__3{
+        @include pantalla(telefono){
+            margin-top: 20px;
+        }
+
+        @include pantalla(tablet){
+            margin-top: 30px;
+        }
+        
+        @include pantalla(pc-media){
+            margin-top: -70px;
+        }
+    }
+    
+    &__titulo{
+        background-color: white;
+        padding: 1rem 0 .5rem;
+        color: $color-principal;
+    }
+    &__texto{
+        padding: 1rem 0 1rem;
+        
+    }
+    &__imagen{
+        @include imagen__recortada;
+        height: 277px;
     }
 }
 
+
 /*     contenedores vista Nosotros      */
 
-.articulo__propuesta{ /*  propuesta institucional  */
+/*  propuesta institucional  */
+.articulo__propuesta{ 
     width: 100%;
     &--img img{
         height: 700px;
         @include imagen__recortada;
-        /*width: 100%;
-        object-fit: cover;
-        margin: auto;*/
+        
         opacity: .8;
     }
 
@@ -80,7 +182,8 @@ body{
     }
 }
 
-.articulo__staff{ /*  staff   */
+/*   staff   */
+.articulo__staff{
     background-color: map-get($colores-fondo , fondo3); /*$color-fondo3;*/
     width: 100%;
 }

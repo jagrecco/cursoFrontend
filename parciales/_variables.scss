@@ -13,3 +13,11 @@ $colores-comunidad:(comunidad0: #f5dbc9, comunidad1: #f5ece5, comunidad2: #f5ece
     width: 100%;
     margin: auto;
 }
+
+/* mixin para sub titulos internos */
+@mixin titulos__internos {
+    font-weight: bold;
+    color: $color-principal;
+}
+
+

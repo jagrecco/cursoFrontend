@@ -13,7 +13,7 @@
 	} @else if $ancho=="pc-media" {
 	@media (min-width: 992px) {@content;}
 
-	} @else if $ancho=="pc-grande" {
+	} @else if $ancho=="pc-xl" {
 	@media (min-width: 1200px) {@content;}
 
 	} @else if $ancho=="pc-xxl" {

@@ -1,11 +1,12 @@
 .footer{
     background-color: map-get($colores-fondo , fondo-principal);
+    margin-top: 5rem;
+    padding-top: 5rem;
 
     &__contiene{    
         --bs-gutter-x:0;
         align-items: center;
         justify-items: center;
-        
     }
     
     &__logo{
@@ -15,13 +16,21 @@
     }
     
     &__logo img{
-        width: 8rem;   
+        width: 5rem;   
     }
 
     &__flex--redes{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        
+        @include pantalla(telefono){
+            margin-top: 2rem;
+        }
+
+        @include pantalla(tablet){
+            margin-top: 4rem;
+        }
     }
 
     &__bi{
@@ -29,19 +38,70 @@
         height: 40px;
     }
 
-
-    &__dir{
+    &__dir--instituto{
         font-size: 1.5rem;
         padding: 4rem 0;
         text-align: center;
         color:$color-principal;
+
+        @include pantalla(telefono){
+            padding: 2rem 0;
+        }
+
+        @include pantalla(tablet){
+            padding: 2rem 0 0;
+        }
+    }
+
+    &__dir--ubicacion{
+        font-size: 1rem;
+        color: $color-principal;
+        text-align: center;
+
+        @include pantalla(telefono){
+            font-size: .8rem;
+        }
+
+    }
+    &__dir--tel{
+        font-size: 1rem;
+        color: $color-principal;
+        text-align: center;
+
+        @include pantalla(telefono){
+            font-size: .8rem;
+        }
     }
 
     &__menu{
         margin-left: 4rem;
         font-size: 1.2rem;
+
+        @include pantalla(telefono){
+            display: none;
+        }
+
+        @include pantalla(tablet){
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+            margin: 2rem 0;
+            padding: 0;
+        }
+        @include pantalla(pc-media){
+            justify-content: space-around;
+        }
+        @include pantalla(pc-xl){
+            flex-direction: column;
+            margin-left: 4rem;
+        }
+
         & li{
             list-style: none;
+            @include pantalla(tablet){
+                display: inline-block;
+                
+            }
             & a{
                 text-decoration: none;
                 color:$color-principal;
@@ -65,5 +125,17 @@
         margin-top: 1rem;
         padding: 0;
         text-align: center;
+
+        @include pantalla(telefono){
+            font-size: .6rem;
+        }
+
+        & svg{
+            color: $color-principal;
+        }
+        & a{
+            text-decoration: none;
+            color: $color-principal;
+        }
     }
 }

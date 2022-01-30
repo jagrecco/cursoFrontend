@@ -1,7 +1,19 @@
+@import"../parciales/mQ-sass";
+
 .hero{
     position: relative;
-    padding-top: 3rem;
+    padding-top: 30vh;
+    padding-left: 10vw;
     z-index: 2;
+
+    @include pantalla(telefono){
+        padding-top: 30vh;
+        padding-left: .5vw;
+    }
+    @include pantalla(tablet){
+        padding-top: 35vh;
+        padding-left: .5vw;
+    }
 
     &__mensaje{
         align-items: center;
@@ -9,12 +21,19 @@
     }
     
     &__txt{
-        
         padding: 0rem 6rem;
+
+        @include pantalla(telefono){
+            padding: 0rem 3rem;
+        }
+
+        @include pantalla(tablet){
+            padding: 0rem 3rem;
+        }
 
         & h1{
             font-weight: normal;
-            /*color: #c10001;*/
+            color: white;
         }
     }
     
@@ -22,10 +41,4 @@
         color:#f16c1a;
     }
     
-    &__img img{
-        @include imagen__recortada;
-        z-index: 1;
-        height: 60vh;
-        opacity: .8;
-    }
 }
