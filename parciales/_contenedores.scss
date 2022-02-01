@@ -75,7 +75,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
-
 }
   /*    contenedor tarjetas vista index  */
 .contiene__tarjetas{
@@ -158,24 +157,43 @@
 
 /*     contenedores vista Nosotros      */
 
+.propuesta__nosotros{
+    background: url(../assets/colegio.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    color: white;
+    padding-top: 30vh;
+
+    & p{
+        font-weight: bold;
+    }
+}
+
 /*  propuesta institucional  */
-.articulo__propuesta{ 
-    width: 100%;
-    &--img img{
-        height: 700px;
-        @include imagen__recortada;
-        
-        opacity: .8;
+.articulo__propuesta{
+    margin-top: 6rem;
+    background-color: white;
+    padding-top: 2rem;
+    z-index: 1002;
+
+    &--titulo{
+        @include titulos__internos;
     }
 
     &--lista{
-        padding-bottom: 2rem;
+        padding: 0;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
 
         & li{
-            padding: 0 .2rem;
-            border-left: orangered 2px solid;
+            padding: .5rem .5rem;
+            margin: .2rem;
+            background-color: $color-principal;
             list-style: none;
             text-align: center;
         }
@@ -183,13 +201,45 @@
 }
 
 /*   staff   */
+.contenedor__fondo{
+    background-color: map-get($colores-fondo , fondo3);
+}
 .articulo__staff{
-    background-color: map-get($colores-fondo , fondo3); /*$color-fondo3;*/
-    width: 100%;
+    padding: 7rem 0 7rem;
+
+    &--titulo{
+        @include titulos__internos;
+    }
+    &--bajada{
+        margin-bottom: 2rem;
+    }
+    &--img{
+        @include imagen__recortada;
+        
+        height: 500px;
+    }
 }
 
-.articulo__instalaciones{ /* instalaciones */
-    width: 100%;
+ /* instalaciones */
+.articulo__instalaciones{
+    padding: 6rem 0 6rem;
+    &--titulo{
+        @include titulos__internos;
+    }
+    &--galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        & img{
+            padding: .2rem;
+            max-width: 250px;
+            height: auto;
+            &:hover{
+                border: 1px solid $color-principal;
+                
+            }
+        }
+    }
 }
 
 .instalaciones__detalle{
@@ -201,6 +251,7 @@
         height: auto;
     }
 }
+
 
 /*   contenedores vista Inicial   */
 .main__jardin--img{

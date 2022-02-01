@@ -122,34 +122,73 @@
     height: 277px; }
 
 /*     contenedores vista Nosotros      */
+.propuesta__nosotros {
+  background: url(../assets/colegio.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
+  color: white;
+  padding-top: 30vh; }
+  .propuesta__nosotros p {
+    font-weight: bold; }
+
 /*  propuesta institucional  */
 .articulo__propuesta {
-  width: 100%; }
-  .articulo__propuesta--img img {
-    height: 700px;
-    object-fit: cover;
-    width: 100%;
-    margin: auto;
-    opacity: .8; }
+  margin-top: 6rem;
+  background-color: white;
+  padding-top: 2rem;
+  z-index: 1002; }
+  .articulo__propuesta--titulo {
+    font-weight: bold;
+    color: #c10001; }
   .articulo__propuesta--lista {
-    padding-bottom: 2rem;
+    padding: 0;
     display: flex;
-    align-items: center; }
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
     .articulo__propuesta--lista li {
-      padding: 0 .2rem;
-      border-left: orangered 2px solid;
+      padding: .5rem .5rem;
+      margin: .2rem;
+      background-color: #c10001;
       list-style: none;
       text-align: center; }
 
 /*   staff   */
-.articulo__staff {
-  background-color: #f6f3ed;
-  /*$color-fondo3;*/
-  width: 100%; }
+.contenedor__fondo {
+  background-color: #f6f3ed; }
 
+.articulo__staff {
+  padding: 7rem 0 7rem; }
+  .articulo__staff--titulo {
+    font-weight: bold;
+    color: #c10001; }
+  .articulo__staff--bajada {
+    margin-bottom: 2rem; }
+  .articulo__staff--img {
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+    height: 500px; }
+
+/* instalaciones */
 .articulo__instalaciones {
-  /* instalaciones */
-  width: 100%; }
+  padding: 6rem 0 6rem; }
+  .articulo__instalaciones--titulo {
+    font-weight: bold;
+    color: #c10001; }
+  .articulo__instalaciones--galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .articulo__instalaciones--galeria img {
+      padding: .2rem;
+      max-width: 250px;
+      height: auto; }
+      .articulo__instalaciones--galeria img:hover {
+        border: 1px solid #c10001; }
 
 .instalaciones__detalle {
   display: flex;
