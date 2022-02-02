@@ -166,6 +166,9 @@
     height: 95vh;
     color: white;
     padding-top: 30vh;
+    @include pantalla(telefono){
+        padding-top: 13vh;
+    }
 
     & p{
         font-weight: bold;
@@ -174,10 +177,14 @@
 
 /*  propuesta institucional  */
 .articulo__propuesta{
-    margin-top: 6rem;
     background-color: white;
-    padding-top: 2rem;
+    padding-top: 8rem;
     z-index: 1002;
+    @include pantalla(telefono){
+        padding: 9rem 0rem 2rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     &--titulo{
         @include titulos__internos;
@@ -189,13 +196,21 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        @include pantalla(telefono){
+            flex-direction: column;
+        }
 
         & li{
-            padding: .5rem .5rem;
+            padding: .5rem .8rem;
             margin: .2rem;
             background-color: $color-principal;
             list-style: none;
             text-align: center;
+            @include pantalla(telefono){
+                font-size: .8rem;
+                margin-top: .5rem;
+                width: 100%;
+            }
         }
     }
 }
@@ -205,7 +220,10 @@
     background-color: map-get($colores-fondo , fondo3);
 }
 .articulo__staff{
-    padding: 7rem 0 7rem;
+    padding: 7rem 1.5rem 7rem;
+    @include pantalla(telefono){
+        padding-top: 5rem;
+    }
 
     &--titulo{
         @include titulos__internos;
@@ -215,14 +233,20 @@
     }
     &--img{
         @include imagen__recortada;
-        
         height: 500px;
+        @include pantalla(telefono){
+            height: 350px;
+        }
     }
 }
 
  /* instalaciones */
 .articulo__instalaciones{
     padding: 6rem 0 6rem;
+    @include pantalla(telefono){
+        padding: 4rem 1rem 2rem;
+    }
+
     &--titulo{
         @include titulos__internos;
     }
@@ -230,10 +254,33 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        @include pantalla(tablet){
+            justify-items: auto;
+            padding-top: 1rem;
+            max-width: 100%;
+            .galeria5{
+                display: none;
+            }
+        }
+        @include pantalla(pc-xl){
+            .galeria5{
+                display: block;
+            }
+        }
+        
         & img{
             padding: .2rem;
             max-width: 250px;
             height: auto;
+            @include pantalla(telefono){
+                max-width: 100%;
+            }
+            @include pantalla(tablet){
+                margin-top: 2rem;
+            }
+            @include pantalla(pc-media){
+                max-width: 200px;
+            }
             &:hover{
                 border: 1px solid $color-principal;
                 
@@ -252,32 +299,164 @@
     }
 }
 
-
 /*   contenedores vista Inicial   */
-.main__jardin--img{
-    width: 100%;
-    height: auto;
+.inicial__presenta{
+    padding: 12rem 0 6rem;
+    &--titulo{
+        @include titulos__internos;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        @include pantalla(telefono){
+            font-size: 1.5rem;
+        }
+    }
+    @include pantalla(telefono){
+        padding: 9rem 1.5rem 6rem;
+    }
+}
+
+.propuesta__inicial{
+    background: url(../assets/arte.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    color: white;
+    padding-top: 30vh;
+    @include pantalla(telefono){
+        padding-top: 13vh;
+    }
+
+    & p{
+        font-weight: bold;
+    }
+}
+
+.inicial__galeria--img{
+    @include imagen__recortada;
+    height: 100%;
 
     &:hover{
+        cursor: hand;
         transform: scale(1.1) translate(-4%, -1%);
         transition: transform 600ms ease-in;
     }
 }
 
-.article__organizacion{
+.inicial__fondo{
+    padding: 6rem 0;
     background-color: map-get($colores-fondo , fondo2);
     width: 100%;
-
-    &--img img{
-        width: 100%;
+}
+.inicial__organizacion{
+    & h2{
+        @include titulos__internos;
+        font-size: 2rem;
+        @include pantalla(telefono){
+            font-size: 1.5rem;
+        }
+    }
+    @include pantalla(telefono){
+        padding: 0 1.5rem 2rem;
     }
 }
 
 /*  contenedor vista primario  */
-.article__idioma{
-    width: 100%;
+.primario__presenta{
+    padding: 12rem 0 7rem;
+    &--titulo{
+        margin-bottom: 1rem;
+        @include titulos__internos;
+        font-size: 2rem;
+        @include pantalla(telefono){
+            font-size: 1.5rem;
+        }
+    }
+    @include pantalla(telefono){
+        padding: 10rem 1.5rem 5rem;
+    }
 }
 
+.propuesta__primaria{
+    background: url(../assets/primaria3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    color: white;
+    padding-top: 30vh;
+
+    @include pantalla(telefono){
+        padding-top: 13vh;
+    }
+    @include pantalla(tablet){
+        padding-top: 11.5vh;
+    }
+    @include pantalla(pc-xl){
+        padding-top: 25vh;
+    }
+
+    & p{
+        font-weight: bold;
+    }
+    &--titulo{
+        @include titulos__internos;
+        font-size: 2rem;
+        @include pantalla(telefono){
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+.organizacion__primaria{
+    padding: 4rem 0 4rem;
+    & h2{
+        @include titulos__internos;
+        font-size: 2rem;
+        @include pantalla(telefono){
+            font-size: 1.5rem;
+        }
+    }
+    & p {
+        margin: 1rem 0;
+    }
+    @include pantalla(telefono){
+        padding: 1rem 1.5rem 1rem;
+    }
+}
+
+.primaria__idioma{
+    padding: 6rem 0 6rem;
+    @include pantalla(telefono){
+        padding: 5rem 1.5rem 5rem;
+    }
+    
+    & h2{
+        @include titulos__internos;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        @include pantalla(telefono){
+            font-size: 1.5rem;
+        }
+    }
+    & img{
+        @include imagen__recortada;
+        height: 100%;
+    }
+    &--parrafo{
+        margin-top: .5rem;
+    }
+
+}
+.galeria__primario{
+    &--img{
+        @include imagen__recortada;
+        height: 100%;
+    }
+}
 /*   contenedor vista secundario  */
 .presenta__secundario{
     width: 100%;
