@@ -384,11 +384,95 @@
 
 /*   contenedor vista secundario  */
 .presenta__secundario {
-  width: 100%; }
+  padding: 13rem 0 8rem; }
+  @media (max-width: 576px) {
+    .presenta__secundario {
+      padding: 9rem 2rem 5rem; } }
+  @media (min-width: 577px) {
+    .presenta__secundario {
+      padding: 9rem 2rem 5rem; } }
+  .presenta__secundario h1 {
+    font-weight: bold;
+    color: #c10001;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+    @media (max-width: 576px) {
+      .presenta__secundario h1 {
+        font-size: 1.5rem; } }
 
-.articulo__secundario--idioma {
+.propuesta__secundaria {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../assets/secu1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
+  color: white;
+  padding-top: 30vh; }
+  @media (max-width: 576px) {
+    .propuesta__secundaria {
+      padding-top: 3vh;
+      height: 100vh; } }
+  @media (min-width: 577px) {
+    .propuesta__secundaria {
+      padding-top: 11.5vh; } }
+  @media (min-width: 1200px) {
+    .propuesta__secundaria {
+      padding-top: 25vh; } }
+  .propuesta__secundaria p {
+    font-weight: bold; }
+  .propuesta__secundaria--titulo {
+    font-weight: bold;
+    color: #c10001;
+    font-size: 2rem;
+    color: white; }
+    @media (max-width: 576px) {
+      .propuesta__secundaria--titulo {
+        font-size: 1.5rem; } }
+
+@media (max-width: 576px) {
+  .secundario__examenes {
+    padding: 0rem 2rem; } }
+
+.secundario__examenes h2 {
+  font-weight: bold;
+  color: #c10001;
+  font-size: 2rem;
+  margin-bottom: 1rem; }
+  @media (max-width: 576px) {
+    .secundario__examenes h2 {
+      font-size: 1.5rem; } }
+
+.secundario__examenes--color {
   background-color: #f6f3ed;
-  width: 100%; }
+  padding: 6rem 0; }
+
+.galeria__secundario {
+  margin-top: 2rem;
+  background-color: white; }
+  .galeria__secundario--img {
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    padding: 0 .5rem; }
+    @media (max-width: 576px) {
+      .galeria__secundario--img {
+        padding: 0.5rem 0rem; } }
+
+.secundario__orientacion {
+  padding: 8rem 0 8rem; }
+  @media (max-width: 576px) {
+    .secundario__orientacion {
+      padding: 4rem 2rem 4rem; } }
+  .secundario__orientacion h2 {
+    font-weight: bold;
+    color: #c10001;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+    @media (max-width: 576px) {
+      .secundario__orientacion h2 {
+        font-size: 1.5rem; } }
 
 /*   contenedor vista comunidad  */
 .comunidad__nota--0 {
@@ -463,19 +547,19 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-color: #c10001;
   display: flex;
   align-items: center; }
   @media (max-width: 576px) {
     .cita {
-      height: 60vh; } }
+      height: 70vh; } }
   @media (min-width: 1200px) {
     .cita {
-      height: 60vh; } }
+      height: 70vh; } }
   @media (min-width: 992px) {
     .cita {
-      height: 60vh; } }
+      height: 70vh; } }
   @media (min-width: 1440px) {
     .cita {
       height: 45vh; } }
@@ -491,7 +575,7 @@
         max-width: 60vw; } }
     @media (min-width: 1440px) {
       .cita__contenedor {
-        margin-top: -100px;
+        margin-top: -90px;
         max-width: 50vw; } }
   .cita__texto {
     font-size: 8rem;

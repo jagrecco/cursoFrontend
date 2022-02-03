@@ -94,21 +94,21 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-color: $color-principal;
     display: flex;
     align-items: center;
 
     @include pantalla(telefono){
-        height: 60vh;
+        height: 70vh;
     }
 
     @include pantalla(pc-xl){
-        height: 60vh;
+        height: 70vh;
     }
 
     @include pantalla(pc-media){
-        height: 60vh;
+        height: 70vh;
     }
     
     @include pantalla(pc-xxl){
@@ -129,7 +129,7 @@
         }
 
         @include pantalla(pc-xxl){
-            margin-top: -100px;
+            margin-top: -90px;
             max-width: 50vw;
         }
         

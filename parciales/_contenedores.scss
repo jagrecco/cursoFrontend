@@ -410,7 +410,6 @@
     }
 }
 
-
 .organizacion__primaria{
     padding: 4rem 0 4rem;
     & h2{
@@ -457,15 +456,110 @@
         height: 100%;
     }
 }
+
 /*   contenedor vista secundario  */
 .presenta__secundario{
-    width: 100%;
+    padding: 13rem 0 8rem;
+    @include pantalla(telefono){
+        padding: 9rem 2rem 5rem;
+    }
+    @include pantalla(tablet){
+        padding: 9rem 2rem 5rem;
+    }
+    & h1{
+        @include titulos__internos;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        @include pantalla(telefono){
+            font-size: 1.5rem;
+        }
+    }
 }
 
-.articulo__secundario--idioma{
-    background-color:map-get($colores-fondo , fondo3);
-    width: 100%;
+.propuesta__secundaria{
+    background:linear-gradient( 
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.6)
+    ), url(../assets/secu1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    color: white;
+    padding-top: 30vh;
+
+    @include pantalla(telefono){
+        padding-top: 3vh;
+        height: 100vh;
+    }
+    @include pantalla(tablet){
+        padding-top: 11.5vh;
+    }
+    @include pantalla(pc-xl){
+        padding-top: 25vh;
+    }
+
+    & p{
+        font-weight: bold;
+    }
+    &--titulo{
+        @include titulos__internos;
+        font-size: 2rem;
+        color: white;
+        @include pantalla(telefono){
+            font-size: 1.5rem;
+        }
+    }
 }
+
+.secundario__examenes{
+    @include pantalla(telefono){
+        padding: 0rem 2rem;
+    }
+    & h2{
+        @include titulos__internos;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        @include pantalla(telefono){
+            font-size: 1.5rem;
+        }
+    }
+    &--color{
+        background-color:map-get($colores-fondo , fondo3);
+        padding: 6rem 0;
+    }
+}
+
+.galeria__secundario{
+    margin-top: 2rem;
+    background-color: white;
+
+    &--img{
+        @include imagen__recortada;
+        height: 100%;
+        padding: 0 .5rem;
+        @include pantalla(telefono){
+            padding: 0.5rem 0rem;
+        }
+    }
+}
+
+.secundario__orientacion{
+    padding: 8rem 0 8rem;
+    @include pantalla(telefono){
+        padding: 4rem 2rem 4rem;
+    }
+    & h2{
+        @include titulos__internos;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        @include pantalla(telefono){
+            font-size: 1.5rem;
+        }
+    }
+}
+
 
 /*   contenedor vista comunidad  */
 .comunidad__nota--0{

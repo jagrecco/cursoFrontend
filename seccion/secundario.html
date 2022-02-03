@@ -21,32 +21,30 @@
 
 <body>
 
-  <div class="contenedor__principal">
-
   <header class="header">  <!----------------------------- HEADER ---->
-                
-    <nav class="navbar navbar-expand-lg navbar-light  bg-light">
-        <div class="container-fluid px-lg-5 px-sm-2">
-          <a class="navbar-brand p-0 m-0" href="#"><img class="header__logo" src="/assets/logo.png" alt="Logo Colegio"></a>
+    <nav class="navbar navbar-expand-lg navbar-light  bg-light fixed-top  shadow">
+        <div class="container px-lg-2 px-sm-1">
+          <a class="navbar-brand p-0 m-0" href="#"><img class="header__logo" src="../assets/logo.png" alt="Logo Colegio"></a>
+          <h3 class="header__titulo">Instituto Colegium</h3>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav align-items-center">
               <li class="nav-item h6">
-                <a class="nav-link text-danger" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link text-danger " aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item h6">
-                <a class="nav-link text-danger" href="/seccion/nosotros.html">Nosotros</a>
+                <a class="nav-link text-danger " href="/seccion/nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item h6">
-                <a class="nav-link text-danger" href="/seccion/inicial.html">Inicial</a>
+                <a class="nav-link text-danger " href="/seccion/inicial.html">Inicial</a>
               </li>
               <li class="nav-item h6">
-                <a class="nav-link text-danger" href="/seccion/primario.html">Primario</a>
+                <a class="nav-link text-danger active" href="/seccion/primario.html">Primario</a>
               </li>
               <li class="nav-item h6">
-                <a class="nav-link active text-danger" href="#">Secundario</a>
+                <a class="nav-link text-danger active" href="#">Secundario</a>
               </li>
               <li class="nav-item h6">
                 <a class="nav-link text-danger" href="/seccion/comunidad.html">Comunidad</a>
@@ -55,87 +53,128 @@
             </ul>
           </div>
         </div>
-      </nav>
-
+    </nav>
   </header>  <!------------------------------ /  HEADER -->
 
+  <div class="btn__insc">
+      <button type="button" class="btn btn-primary animate__animated animate__bounce animate__delay-2s animate__repeat-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Inscripción 2022
+      </button>
+  </div>
 
-    <secttion class="container-fluid">
+  <section class="container">
+    <article class="row presenta__secundario animate__animated animate__fadeInUp">
 
-        <div class="btn__insc">
-            <button type="button" class="btn btn-primary animate__animated animate__bounce animate__delay-2s animate__repeat-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Inscripción 2022
-            </button>
+      <h1 class="text-center">Nuestro Nivel Secundario</h1>
+      <div class="col-12 px-0">
+        <p class="fw-light">Desde los primeros años de secundaria se comienza a trabajar con una metodología activa, en la cual el profesor es un guía, un mediador y un apoyo conceptual para los alumnos. El diseño de las aulas favorece esta metodología ya que están organizadas en mesas de trabajo haciendo que el intercambio y el trabajo colaborativo sean un aspecto muy importante del trabajo diario . Los proyectos, tanto disciplinarios como interdisciplinarios, se profundizan en este tipo de metodología donde se parte de las múltiples conexiones de contenidos abordándolos de distintas formas: guías de actividades para viajes, ejercitación y prácticas y proyectos especiales entre otros En los dos últimos años del nivel la relación con la Universidad se profundiza al incorporar contenidos que se abordan en este nivel, al igual que una metodología particular de trabajo y participación. Actividades como investigación monográfica , charlas TED, trabajos de campo, clases participativas , exámenes parciales integradores, y trabajos que incentivan las potencialidades de cada alumno desde las inteligencias múltiples , son habituales en la cotidianidad del nivel lo que genera un gran sentido de pertenencia en el alumnado.</p>
+        <p class="fw-light">Enseñar a través del modelo de aprendizaje en base de competencias en función del desarrollo integral del alumno/a. Formarse en el respeto a los derechos y deberes fundamentales y en el ejercicio a la tolerancia y de la libertad dentro de los principios democráticos de convivencia. Adquirir hábitos intelectuales y técnicas de trabajo, así como de conocimiento científico, técnicos históricos, humanísticos y estéticos. Formar a los alumnos /as en el respeto a la diversidad en todas sus acepciones. Capacitar para participar activamente en la vida cultural y social. Formar para la paz, la cooperación y la solidaridad entre los pueblos. Acercar a los alumnos a la realidad social, laboral y cultural de su ciudad, región y país a través de proyectos concretos de participación activa.</p>
+      </div>
+
+    </article>
+  </section>
+  
+  <div class="cita">  <!-- separador de secciones con cita-->
+    <div class="cita__contenedor container">
+      <p class="cita__texto fw-normal fs-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+      </svg>La educación es un ornamento en la prosperidad y un refugio en la adversidad<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="cita__quote bi bi-quote" viewBox="0 0 16 16">
+        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+      </svg></p>
+      <span class="cita__autor fst-italic fs-5">Aristóteles</span>
+    </div>
+  </div>
+
+  <div class="propuesta__secundaria">
+    <div class="propuesta__nosotros--txt container">
+      <p class="text-center fs-3 propuesta__secundaria--titulo">Propósitos del Nivel Secundario</p>
+      <ul class="articulo__propuesta--lista">
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-fill" viewBox="0 0 16 16">
+          <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z"/>
+        </svg> Ofrecer situaciones y experiencias que permitan a los alumnos la adquisición de saberes para continuar estudios superiores</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-fill" viewBox="0 0 16 16">
+          <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z"/>
+        </svg> Fortalecer la formación de ciudadanos responsables y comprometidos con el bien común</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-fill" viewBox="0 0 16 16">
+          <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z"/>
+        </svg> Vincular la escuela y el mundo del trabajo a través de una inclusión crítica y transformadora de los alumnos en el ámbito productivo</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-fill" viewBox="0 0 16 16">
+          <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z"/>
+        </svg> Propiciar el desarrollo integral de los alumnos atendiendo a sus necesidades lingüísticas, cognitivas, meta-cognitivas y socio-culturales</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-fill" viewBox="0 0 16 16">
+          <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z"/>
+        </svg> Fomentar el desarrollo de un pensamiento crítico y reflexivo en los alumnos</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-fill" viewBox="0 0 16 16">
+          <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z"/>
+        </svg> Garantizar la participación de los alumnos en consejos de convivencia que les permita crecer en el pleno ejercicio de la ciudadanía</li>
+      </ul>
+
+    </div>
+  </div>
+  
+  <section class="container">
+    <article class="row secundario__orientacion">
+
+      <h2 class="text-center">Orientación Vocacional</h2>
+
+      <div class="col-xl-8 col-lg-12 col-md-12">
+        <p class="fw-light">La orientación vocacional es un tema central para nuestra institución. La Trayectoria Individual de Información, Orientación y Descubrimiento Del Mundo Económico y Profesional (PIIODMEP) que proponemos a cada alumno desde M1 está integrada así en los nuevos programas escolares franceses, a partir de 2015. Consiste en enseñar a cada alumno los oficios, las formaciones y sus salidas profesionales, desarrollar la capacidad de orientación a lo largo de la vida y el espíritu de emprendimiento, como un proceso continuo.</p>
+        <p class="fw-light">La orientación vocacional no representa una nueva materia, sino que se apoya en el conjunto de los aprendizajes para ir desarrollando así en los jóvenes, representaciones más precisas que los ayuden a reflexionar de manera más serena, acerca de su porvenir profesional.</p>
+        <p class="fw-light">Consideramos que la educación debe contribuir al desarrollo global de cada persona: cuerpo y mente, inteligencia, sensibilidad, sentido estético, responsabilidad individual, espiritualidad.</p>
+      </div>
+
+      <div class="col-xl-4 col-lg-12 col-md-12">
+        <img src="../assets/secu2.jpg" alt="Imagen Secundario" class="img-fluid  shadow">
+      </div>
+
+    </article>
+  </section>
+
+  <div class="secundario__examenes--color">
+    <section class="container">
+      <article class="row secundario__examenes">
+  
+        <h2 class="text-center">Exámenes Internacionales</h2>
+        <div class="col-xl-12 col-lg-12 col-md-12">
+          <p class="fw-light">Al finalizar el último año del Secundario Básico, los alumnos se presentan al <strong>“Brevet National de Collèges” (DNB)</strong>. Deliberado por un jurado, evalúan y certifican los conocimientos y las competencias adquiridas al finalizar el ciclo correspondiente al Secundario Básico. Es un proceso de evaluación continua que consta de diferentes etapas de exámenes orales y tres exámenes escritos al finalizar Nivel Medio. El equipo pedagógico promueve el enriquecimiento de la diversidad cultural mediante la aplicación de una pedagogía innovadora y un espíritu de apertura, poniendo especial énfasis en el aprendizaje de las lenguas y en diferentes lenguas (francés, español, inglés).</p>
+          <p class="fw-light">El equipo pedagógico promueve el enriquecimiento de la diversidad cultural mediante la aplicación de una pedagogía innovadora y un espíritu de apertura, poniendo especial énfasis en el aprendizaje de las lenguas y en diferentes lenguas (francés, español, inglés).</p>
+          <p class="fw-light">Este trayecto responde a la ley de orientación y programación para la reestructuración de la escuela francesa. Su objetivo es permitir a cada alumno de Secundario la construcción de su trayecto de información y descubrimiento del mundo económico y profesional.</p>
+          <p class="fw-light">Una base común de conocimientos, competencias, conocimientos y cultura. Dicha base identifica lo que un alumno debe adquirir al final de la escolaridad obligatoria y es la siguiente: Entender, expresarse usando los idiomas inglés, francés y español (de forma escrita y oral). Entender, expresarse usando un idioma extranjero (inglés y portugués). Entender, expresarse usando los lenguajes matemáticos, científicos e informáticos. Entender, expresarse usando los lenguajes corporales y artísticos.</p>
         </div>
+  
+      </article>
 
-        <article class="row py-lg-5 px-lg-5 py-md-4 px-md-4 py-sm-2 px-sm-2 py-2 px-4 presenta__secundario animate__animated animate__fadeInUp">
+    </section>
 
-            <h1 class="text-center py-1">Nivel Secundario</h1>
+    <section class="container">
+      <article class="row galeria__secundario">
+        <div class="col-3 col-12 col-md-3 px-0">
+          <img src="../assets/idioma-cambridge.png" alt="Imagen jardín" class="galeria__secundario--img shadow">
+        </div>
+  
+        <div class="col-3 col-12 col-md-3 px-0">
+          <img src="../assets/idioma-trinity.png" alt="Imagen jardín" class="galeria__secundario--img shadow">
+        </div>
+  
+        <div class="col-3 col-12 col-md-3 px-0">
+          <img src="../assets/idioma-essarp.png" alt="Imagen jardín" class="galeria__secundario--img shadow">
+        </div>
+        <div class="col-3 col-12 col-md-3 px-0">
+          <img src="../assets/idioma-UCA.png" alt="Imagen jardín" class="galeria__secundario--img shadow">
+        </div>
+      </article>
+    </section>
 
-            <div class="col-12 px-0">
+  </div>
 
-                <p class="fw-light">Desde los primeros años de secundaria se comienza a trabajar con una metodología activa, en la cual el profesor es un guía, un mediador y un apoyo conceptual para los alumnos. El diseño de las aulas favorece esta metodología ya que están organizadas en mesas de trabajo haciendo que el intercambio y el trabajo colaborativo sean un aspecto muy importante del trabajo diario . Los proyectos, tanto disciplinarios como interdisciplinarios, se profundizan en este tipo de metodología donde se parte de las múltiples conexiones de contenidos abordándolos de distintas formas: guías de actividades para viajes, ejercitación y prácticas y proyectos especiales entre otros En los dos últimos años del nivel la relación con la Universidad se profundiza al incorporar contenidos que se abordan en este nivel, al igual que una metodología particular de trabajo y participación. Actividades como investigación monográfica , charlas TED, trabajos de campo, clases participativas , exámenes parciales integradores, y trabajos que incentivan las potencialidades de cada alumno desde las inteligencias múltiples , son habituales en la cotidianidad del nivel lo que genera un gran sentido de pertenencia en el alumnado.</p>
-                <p class="fw-light">Enseñar a través del modelo de aprendizaje en base de competencias en función del desarrollo integral del alumno/a. Formarse en el respeto a los derechos y deberes fundamentales y en el ejercicio a la tolerancia y de la libertad dentro de los principios democráticos de convivencia. Adquirir hábitos intelectuales y técnicas de trabajo, así como de conocimiento científico, técnicos históricos, humanísticos y estéticos. Formar a los alumnos /as en el respeto a la diversidad en todas sus acepciones. Capacitar para participar activamente en la vida cultural y social. Formar para la paz, la cooperación y la solidaridad entre los pueblos. Acercar a los alumnos a la realidad social, laboral y cultural de su ciudad, región y país a través de proyectos concretos de participación activa.</p>
+  <footer class="container-fluid footer px-0 my-0">
 
-            </div>
-
-            <div class="col-12 articulo__propuesta--img">
-                <img src="../assets/secu1.jpg" alt="Imagen Secundario" class="img-fluid">
-            </div>
-
-        </article>
-
-        <article class="row py-lg-5 px-lg-5 py-md-4 px-md-4 py-sm-2 px-sm-2 py-2 px-4 article__organizacion">
-
-            <h2 class="text-center py-1">Exámenes Internacionales</h2>
-
-            <div class="col-12">
-                <p class="fw-light">Al finalizar el último año del Secundario Básico, los alumnos se presentan al “Brevet National de Collèges” (DNB). Deliberado por un jurado, evalúan y certifican los conocimientos y las competencias adquiridas al finalizar el ciclo correspondiente al Secundario Básico. Es un proceso de evaluación continua que consta de diferentes etapas de exámenes orales y tres exámenes escritos al finalizar Nivel Medio. El equipo pedagógico promueve el enriquecimiento de la diversidad cultural mediante la aplicación de una pedagogía innovadora y un espíritu de apertura, poniendo especial énfasis en el aprendizaje de las lenguas y en diferentes lenguas (francés, español, inglés).</p>
-                <p class="fw-light">El equipo pedagógico promueve el enriquecimiento de la diversidad cultural mediante la aplicación de una pedagogía innovadora y un espíritu de apertura, poniendo especial énfasis en el aprendizaje de las lenguas y en diferentes lenguas (francés, español, inglés). Los alumnos realizar su escolaridad desde nivel inicial hasta 3er. año de secundaria en la sede del Colegio Franco Argentino de Acassuso y terminan el ciclo de secundaria (de 4° a 6° año) en el Liceo Franco Argentino Jean Mermoz, situado en la capital en el barrio de Núñez. Los alumnos preparan allí el Baccalauréat y el Bachillerato. Existe un acuerdo entre las dos instituciones que asegura que los alumnos que finalicen 3er. año en CFAM tengan vacantes en 4° año del Liceo Jean Mermoz y exime a las familias del pago de los derechos de la primera inscripción en dicha institución. De esta manera, se garantiza la continuidad del plan de estudios francés en un establecimiento de la red de la AEFE en la Argentina.</p>
-                <p class="fw-light">Este trayecto responde a la ley de orientación y programación para la reestructuración de la escuela francesa. Su objetivo es permitir a cada alumno de Secundario la construcción de su trayecto de información y descubrimiento del mundo económico y profesional.</p>
-            </div>
-
-        </article>
-
-        <article class="row py-lg-5 px-lg-5 py-md-4 px-md-4 py-sm-2 px-sm-2 py-2 px-4 article__idioma">
-
-            <h2 class="py-1 text-center text-lg-start">Orientación Vocacional</h2>
-
-            <div class="col-xl-8 col-lg-12 col-md-12">
-                <p class="fw-light">La orientación vocacional es un tema central para nuestra institución. La Trayectoria Individual de Información, Orientación y Descubrimiento Del Mundo Económico y Profesional (PIIODMEP) que proponemos a cada alumno desde M1 está integrada así en los nuevos programas escolares franceses, a partir de 2015. Consiste en enseñar a cada alumno los oficios, las formaciones y sus salidas profesionales, desarrollar la capacidad de orientación a lo largo de la vida y el espíritu de emprendimiento, como un proceso continuo.</p>
-                <p class="fw-light">La orientación vocacional no representa una nueva materia, sino que se apoya en el conjunto de los aprendizajes para ir desarrollando así en los jóvenes, representaciones más precisas que los ayuden a reflexionar de manera más serena, acerca de su porvenir profesional.</p>
-            </div>
-
-            <div class="col-xl-4 col-lg-12 col-md-12">
-                <img src="../assets/secu2.jpg" alt="Imagen Secundario" class="img-fluid">
-            </div>
-
-        </article>
-
-        <article class="row py-lg-5 px-lg-5 py-md-4 px-md-4 py-sm-2 px-sm-2 py-2 px-4 articulo__secundario--idioma">
-
-            <h2 class="py-1 text-center text-lg-start">Area de Idiomas</h2>
-
-            <div class="col-xl-8 col-lg-12 col-md-12">
-                <p class="fw-light">Las dos lenguas son consideradas “lenguas maternas” y apuntan a formar a los alumnos en la comunicación y en la producción oral y escrita. Las clases se organizan de manera equilibrada, sin categorización por niveles de idioma, teniendo en cuenta los distintos bagajes de los alumnos. Esto favorece la incorporación natural de ambas lenguas a partir del trabajo y la convivencia diaria, con un seguimiento personalizado de cada alumno. Se trata de estructuras sistematizadas, tendientes a lograr la integración de todos los alumnos aun los que ingresan sin conocimientos previos de alguno de los idiomas. Para ello, existen los siguientes dispositivos que son metodologías especiales para el aprendizaje del francés y del español como lenguas de escolarización, utilizado para aquellos alumnos extranjeros que necesitan desarrollar el español</p>
-                <p class="fw-light">Una base común de conocimientos, competencias, conocimientos y cultura. Dicha base identifica lo que un alumno debe adquirir al final de la escolaridad obligatoria y es la siguiente: Entender, expresarse usando los idiomas francés y español (de forma escrita y oral). Entender, expresarse usando un idioma extranjero (inglés y portugués). Entender, expresarse usando los lenguajes matemáticos, científicos e informáticos. Entender, expresarse usando los lenguajes corporales y artísticos.</p>
-            </div>
-
-            <div class="col-xl-4 col-lg-12 col-md-12">
-              <img src="../assets/secu3.jpg" alt="Imagen Secundario" class="img-fluid">
-            </div>
-
-        </article>
-
-    </secttion>
-
-
-    <footer class="container-fluid footer px-0">
-
+    <div class="container footer__marco">
+  
       <div class="row footer__contiene">
   
         <div class="col-xl-4 col-md-12 col-xs-12 footer__logo order-xl-2 order-lg-1 order-md-1">
-          <img src="/assets/logo.png" alt="Logo Colegio" width="200px" >
+          <img src="../assets/logo.png" alt="Logo Colegio"" >
         </div>
   
         <div class="col-xl-4 col-md-12 col-xs-12 footer__redes order-xl-1 order-lg-2 order-md-2">
@@ -159,7 +198,17 @@
   
           </div>
         
-          <p class="footer__dir"> <strong>INSTITUTO EDUCATIVO COLEGIUM</strong> <br> Av. Amendolara 4852 - Ciudad de la Paz <br>Ciudad Autonoma de Buenos Aires</p>
+          <p class="footer__dir--instituto"> <strong>INSTITUTO EDUCATIVO COLEGIUM</strong></p>
+          <p class="footer__dir--ubicacion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg> Av. Amendolara 4852 - Ciudad de la Paz</p>
+          <p class="footer__dir--tel"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg> +54 9 5632 9874 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg> +54 9 5632 9963</p>
+        
   
         </div>
   
@@ -167,22 +216,34 @@
           
           <ul class="footer__menu">
             <li class="">
-              <a class="" href="../index.html">Inicio</a>
+              <a class="bolder" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+              </svg> Inicio</a>
             </li>
             <li class="">
-              <a class="" href="/seccion/nosotros.html">Nosotros</a>
+              <a class="" href="./seccion/nosotros.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+              </svg> Nosotros</a>
             </li>
             <li class="">
-              <a class="" href="/seccion/inicial.html">Inicial</a>
+              <a class="" href="./seccion/inicial.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+              </svg> Inicial</a>
             </li>
             <li class="">
-              <a class="" href="/seccion/primario.html">Primario</a>
+              <a class="" href="./seccion/primario.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+              </svg> Primario</a>
             </li>
             <li class="">
-              <a class="" href="#">Secundario</a>
+              <a class="" href="./seccion/secundario.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+              </svg> Secundario</a>
             </li>
             <li class="">
-              <a class="" href="/seccion/comunidad.html">Comunidad</a>
+              <a class="" href="./seccion/comunidad.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+              </svg> Comunidad</a>
             </li>
             
           </ul>
@@ -190,82 +251,83 @@
   
   
       </div>
+    </div>
   
-      <div class="footer__ubicacion shadow">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.0593447747715!2d-58.256079260195406!3d-34.  72889848159439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e5d31e99a05%3A0x2becb207b6225d6a!2sQuilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1638153336340!5m2!1ses-419!2sar" width="100%" height="280px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
   
-      <div class="footer__copy">
-          <p>Copyright 1999-2021 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam amet officia! Dicta incidunt accusamus consequuntur earum optio ullam odio.</p>
-      </div>
+  <div class="footer__ubicacion shadow">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.0593447747715!2d-58.256079260195406!3d-34.  72889848159439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e5d31e99a05%3A0x2becb207b6225d6a!2sQuilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1638153336340!5m2!1ses-419!2sar" width="100%" height="280px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
   
-      </footer>
+  <div class="footer__copy">
+      <p>Copyright 2021-2022 - Todos los derechos reservados <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+      </svg> <a href="www.g3.com.ar">Consultora G3</a></p>
+  </div>
+  
+  </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!-- Modal Inscripcion-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Información de Inscripción</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
-          <div class="modal-body">
-    
-            <div class="">
-            
-              <form action="#" method="get" class="main__formulario" >  <!-- FORMULARIO DE CONTACTO -->
-    
-                <fieldset>
-        
-                    <div class="main__formulario--campo">
-                      <label for="nombre">Nombre</label>
-                      <input type="text" id="nombre" placeholder="Ingrese su nombre">
-                    </div>
+  <!-- Modal Inscripcion-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Información de Inscripción</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body">
+  
+          <div class="">
+          
+            <form action="#" method="get" class="main__formulario" >  <!-- FORMULARIO DE CONTACTO -->
+  
+              <fieldset>
       
-                    <div class="main__formulario--campo">
-                      <label for="apellido">Apellido</label>
-                      <input type="text" id="apellido" placeholder="Ingrese su apellido">
-                    </div>
-                      
-                    <div class="main__formulario--interes">
-                      <label for="nivel">Nivel de interés</label>
-                        <select name="nivel-interes" id="nivel" class="main__formulario--interes">
-                          <option value="inicial">Administración</option>
-                          <option value="inicial">Secretaría</option>
-                          <option value="inicial">Dirección General</option>
-                          <option value="inicial">Inicial</option>
-                          <option value="primaria">Primario</option>
-                          <option value="secundaria">Secundario</option>
-                        </select>
-                    </div>
+                  <div class="main__formulario--campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                  </div>
     
-                    <div class="main__formulario--mail">
-                      <label for="mail">Email</label>
-                      <input type="email" name="correo" id="mail" placeholder="Ingrese su email" class="main__formulario--e-mail"><br>
-                      <textarea name="correo_txt" id="email_txt" cols="30" rows="5" placeholder="Déjenos su consulta aquí" class="main__formulario--mail_txt"></textarea>
-                    </div>
-      
-                    <input type="submit" value="Enviar" class="main__formulario--boton" data-bs-dismiss="modal">
-                    <input type="reset" value="Limpiar Datos" class="main__formulario--boton" data-bs-dismiss="modal">
-      
-                  </fieldset>
-      
-              </form>
+                  <div class="main__formulario--campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Ingrese su apellido">
+                  </div>
+                    
+                  <div class="main__formulario--interes">
+                    <label for="nivel">Nivel de interés</label>
+                      <select name="nivel-interes" id="nivel" class="main__formulario--interes">
+                        <option value="inicial">Administración</option>
+                        <option value="inicial">Secretaría</option>
+                        <option value="inicial">Dirección General</option>
+                        <option value="inicial">Inicial</option>
+                        <option value="primaria">Primario</option>
+                        <option value="secundaria">Secundario</option>
+                      </select>
+                  </div>
+  
+                  <div class="main__formulario--mail">
+                    <label for="mail">Email</label>
+                    <input type="email" name="correo" id="mail" placeholder="Ingrese su email" class="main__formulario--e-mail"><br>
+                    <textarea name="correo_txt" id="email_txt" cols="30" rows="5" placeholder="Déjenos su consulta aquí" class="main__formulario--mail_txt"></textarea>
+                  </div>
     
-          </div>
-          <div class="modal-footer">
-          </div>
+                  <input type="submit" value="Enviar" class="main__formulario--boton" data-bs-dismiss="modal">
+                  <input type="reset" value="Limpiar Datos" class="main__formulario--boton" data-bs-dismiss="modal">
+    
+                </fieldset>
+    
+            </form>
+  
+        </div>
+        <div class="modal-footer">
         </div>
       </div>
     </div>
-
   </div>
 
 </body>
-
 
 </html>
