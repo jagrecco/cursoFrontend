@@ -6,7 +6,6 @@ $colores-fondo:( fondo1: #fbd5d6, fondo2:#f4eef0, fondo3:#f6f3ed, fondo-principa
 /*  mapa formado por los colores de fondo en la vista de comunidad  */
 $colores-comunidad:(comunidad0: #f5dbc9, comunidad1: #f5ece5, comunidad2: #f5ece5);
 
-
 /*    mixin para imágen recortada   */
 @mixin imagen__recortada {
     object-fit: cover;
@@ -19,5 +18,3 @@ $colores-comunidad:(comunidad0: #f5dbc9, comunidad1: #f5ece5, comunidad2: #f5ece
     font-weight: bold;
     color: $color-principal;
 }
-
-
